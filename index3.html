@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile_View</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="main">
+        <div class="titlediv">
+           
+            <h1 class="title">Desktop_View</h1>
+            <a class="homeadd" href="index.html">Home</a>
+            
+        </div>
+        
+        <div class="mobileScreen">
+            <div class="input-section">
+                <!-- <label for="urlInput">Enter Website URL:</label> -->
+                <input type="text" id="urlInput" placeholder="Enter Website URL...">
+                <button class="loadBtn" onclick="loadWebsite()">Load</button>
+            </div>
+        
+            <div class="device-buttons">
+                <select id="deviceSelect" onchange="loadPreset()">
+                    <option >Select Your Desktop</option>
+                    <option value="standard desktop">standard desktop </option>
+                    <option value="older laptops">older laptops</option>
+                    <option value="mid-sized monitors">mid-sized monitors</option>
+                    <option value="larger monitors">larger monitors</option>
+                </select>
+              
+                
+            </div>
+        
+            <div class="result">
+                <iframe id="websiteFrame" width="1885px" height="970px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script3.js"></script>
+</body>
+</html>

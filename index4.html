@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablet_View</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="main">
+        <div class="titlediv">
+           
+            <h1 class="title">Tablet_View</h1>
+            <a class="homeadd" href="index.html">Home</a>
+            
+        </div>
+
+        <div class="tabletScreen">
+            <div class="input-section">
+                <label for="urlInput">Enter Website URL:</label>
+                <input type="text" id="urlInput" placeholder="Enter URL">
+                <button onclick="loadWebsite()">Load</button>
+            </div>
+        
+            <div class="device-buttons">
+                <select id="deviceSelect" onchange="loadPreset()">
+                    <option value="Normal Tablet View">Normal Tablet View</option>
+                    <option value="iPad 9.7">iPad 9.7</option>
+                    <option value="iPad Pro 10.5">iPad Pro 10.5</option>
+                    <option value="Samsung Galaxy Tab S6">Samsung Galaxy Tab S6</option>
+                    <option value="Amazon Fire HD 10">Amazon Fire HD 10</option>
+                    <option value="Microsoft Surface Pro 7">Microsoft Surface Pro 7</option>
+                    <option value="Lenovo Tab M10">Lenovo Tab M10</option>
+                    <option value="Huawei MediaPad M5">Huawei MediaPad M5</option>
+                    <option value="Asus ZenPad 3S 10">Asus ZenPad 3S 10</option>
+                    <option value="Samsung Galaxy Tab A 10.1">Samsung Galaxy Tab A 10.1</option>
+                    <option value="Google Pixel Slate">Google Pixel Slate</option>
+                    <option value="Sony Xperia Tablet Z">Sony Xperia Tablet Z</option>
+                    <option value="Nokia T20">Nokia T20</option>
+                    <option value="Samsung Galaxy Tab S7">Samsung Galaxy Tab S7</option>
+                    <option value="iPad Mini">iPad Mini</option>
+                    <option value="Lenovo Yoga Tab 3 Pro">Lenovo Yoga Tab 3 Pro</option>
+                    <option value="Acer Iconia Tab 10">Acer Iconia Tab 10</option>
+                    <option value="Dell Venue 10">Dell Venue 10</option>
+                    <option value="Samsung Galaxy Tab S5e">Samsung Galaxy Tab S5e</option>
+                    <option value="Amazon Fire HD 8">Amazon Fire HD 8</option>
+                    <option value="Microsoft Surface Go 2">Microsoft Surface Go 2</option>
+                </select>
+               
+                <label for="customWidth">Width</label>
+                <input type="text" id="customWidth" placeholder="Enter width">
+                <label for="customHeight">Height</label>
+                <input type="text" id="customHeight" placeholder="Enter height">
+                <button onclick="applyCustomSize()">Apply Custom Size</button>
+            </div>
+        
+            <div class="result">
+                <iframe id="websiteFrame" width="768px" height="1024px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script4.js"></script>
+</body>
+</html>
